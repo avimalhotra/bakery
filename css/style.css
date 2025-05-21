@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/scriptina-pro');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/playfair-display');
+*,::before,::after{ margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+img{ vertical-align: bottom;}
+button{ cursor: pointer; padding: 0;}
+:disabled{ cursor: not-allowed; }
+ul{ list-style: none; padding: 0;}
+label{ display: inline-block;}
+
+
+
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/proximanova-light-webfont.woff2);
+    font-weight: 300;
+    font-display: swap;
+}
+
+html{ 
+    font-size: 15px;
+    --ff: system-ui, sans-serif;
+    --logo: 'Scriptina Pro', sans-serif;
+    --aleg:"Alegreya", serif;
+    --play: 'Playfair Display', sans-serif;
+    --proxima: proxima, sans-serif;
+}
+
+body{ font-family: var(--proxima);}
+
+/* grid */
+.container{ max-width: 1290px; margin: auto; padding: 0 1rem;}
+.row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;}
+.col-1{ grid-column: span 1;}
+.col-2{ grid-column: span 2;}
+.col-3{ grid-column: span 3;}
+.col-4{ grid-column: span 4;}
+.col-5{ grid-column: span 5;}
+.col-6{ grid-column: span 6;}
+.col-7{ grid-column: span 7;}
+.col-8{ grid-column: span 8;}
+.col-9{ grid-column: span 9;}
+.col-10{ grid-column: span 10;}
+.col-11{ grid-column: span 11;}
+.col-12{ grid-column: span 12;}
+.flex{ display: flex;}
+.justify-space-bet{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+.justify-right{ justify-content: right;}
+.align-center{ align-items: center;}
+.img-resp{ max-width: 100%; height: auto;}
+
+
+/* layout */
+.wrap-1{ background: url(../img/bg-1.webp) no-repeat center/cover; color: #fff; }
+h1{ font: 30px/70px var(--logo); letter-spacing: 8px;}
+h1 a{ display: block; color: inherit;}
+header{ background: #56534c87;}
+.banner{ text-align: center; padding: 200px 0 215px;}
+.social{ gap: 0 2rem; }
+.social a{ display: block; }
+nav li{ flex: 1 1 auto; text-align: center; position: relative;}
+nav a{ display: block; color: inherit; line-height: 70px; padding: 0 1rem; }
+nav li:not(:first-child)::before{ content: '~'; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+
+.banner h2{ font: 700 92px var(--play);  }
+.banner .separator{ margin: 3rem 0;}
+.banner p{ font-size: 24px;}
+.banner a{ display: inline-block; line-height: 50px; width: 200px; background: #56534c87; color: inherit; margin-top: 4rem; }
+
+/* responsive */
+@media screen and (max-width:1310px){
+    html{ font-size: 13px;}
+}
+
+
+@media screen and (max-width:980px){
+
+    h1{ letter-spacing: 3px;}
+
+}
+
+@media screen and (max-width:767px){
+    html{ font-size: 12px;}
+    .col-m-6{ grid-column: span 6; }
+    .col-m-hide{ display: none;}
+    nav{ display: none;}
+}
+
+
+@media screen and (max-width:460px){
+
+}
