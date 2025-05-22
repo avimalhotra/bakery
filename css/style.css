@@ -10,7 +10,6 @@ ul{ list-style: none; padding: 0;}
 label{ display: inline-block;}
 
 
-
 @font-face {
     font-family: proxima;
     src: url(../fonts/proximanova-light-webfont.woff2);
@@ -63,21 +62,44 @@ header{ background: #56534c87;}
 nav li{ flex: 1 1 auto; text-align: center; position: relative;}
 nav a{ display: block; color: inherit; line-height: 70px; padding: 0 1rem; }
 nav li:not(:first-child)::before{ content: '~'; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
-
 .banner h2{ font: 700 92px var(--play);  }
 .banner .separator{ margin: 3rem 0;}
 .banner p{ font-size: 24px;}
 .banner a{ display: inline-block; line-height: 50px; width: 200px; background: #56534c87; color: inherit; margin-top: 4rem; }
 
+
+.wrap-2{ background: url(../img/bg-2.webp) no-repeat center/cover; padding: 105px 0; position: relative; text-align: center; color: #56534c;}
+.wrap-2::before{ content: ''; position: absolute; height: 106px; left: 0; right: 0; top: 0; transform: translateY(-50%); background: url(../img/before.webp) no-repeat center/cover;}
+.wrap-2 h2{ font: 700 48px var(--aleg); }
+.wrap-2 small{ font: 700 14px var(--aleg); color: #a47d5e; text-transform: uppercase; }
+.wrap-2 .text{ font: 14px/24px var(--proxima); margin: 70px 0 30px; }
+.wrap-2 section{ padding: 0 70px;}
+.wrap-2 h3{ font: 700 24px var(--aleg);}
+.chef{ font: 24px var(--aleg); margin: 2rem 0; }
+.chef p{ width: 111px; line-height: 58px; border: 1px solid; border-color: #56534c transparent; }
+.wrap-2 blockquote{ font-family: var(--logo); font-size: 24px; padding: 0 50px; position: relative; padding: 0 100px;}
+.wrap-2 blockquote::before{  content: open-quote; font-family: serif; left: 0; position: absolute; }
+.wrap-2 blockquote::after{ content: close-quote; font-family: serif; right: 0; position: absolute; }
+
+
+
+.wrap-3{ background: url(../img/bg-3.webp) no-repeat center/cover; padding: 140px 0 108px; }
+
+
+
+
 /* responsive */
 @media screen and (max-width:1310px){
     html{ font-size: 13px;}
+    .wrap-2 section{ padding: 0;}
 }
 
 
 @media screen and (max-width:980px){
-
     h1{ letter-spacing: 3px;}
+    .col-t-6{ grid-column: span 6; }
+    .col-t-12{ grid-column: span 12; }
+    .o-t-start{ order: -1;}
 
 }
 
@@ -90,5 +112,5 @@ nav li:not(:first-child)::before{ content: '~'; position: absolute; left: 0; top
 
 
 @media screen and (max-width:460px){
-
+.wrap-2 blockquote{ padding: 0;}
 }
