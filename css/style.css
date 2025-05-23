@@ -70,9 +70,9 @@ nav li:not(:first-child)::before{ content: '~'; position: absolute; left: 0; top
 
 .wrap-2{ background: url(../img/bg-2.webp) no-repeat center/cover; padding: 105px 0; position: relative; text-align: center; color: #56534c;}
 .wrap-2::before{ content: ''; position: absolute; height: 106px; left: 0; right: 0; top: 0; transform: translateY(-50%); background: url(../img/before.webp) no-repeat center/cover;}
-.wrap-2 h2{ font: 700 48px var(--aleg); }
-.wrap-2 small{ font: 700 14px var(--aleg); color: #a47d5e; text-transform: uppercase; }
-.wrap-2 .text{ font: 14px/24px var(--proxima); margin: 70px 0 30px; }
+h2{ font: 700 48px var(--aleg); }
+h2 + small{ font: 700 14px var(--aleg); color: #a47d5e; text-transform: uppercase; }
+.text{ font: 14px/24px var(--proxima); margin: 70px 0 30px; }
 .wrap-2 section{ padding: 0 70px;}
 .wrap-2 h3{ font: 700 24px var(--aleg);}
 .chef{ font: 24px var(--aleg); margin: 2rem 0; }
@@ -84,6 +84,29 @@ nav li:not(:first-child)::before{ content: '~'; position: absolute; left: 0; top
 
 
 .wrap-3{ background: url(../img/bg-3.webp) no-repeat center/cover; padding: 140px 0 108px; }
+.pancakes{ max-width: 960px; margin-left: 95px; position: relative; box-shadow: 0 0 25px #69503a73;}
+.pancakes .left{ flex: 0 1 420px; }
+.pancakes .right{ flex: 1 1 auto;  background: url(../img/bg-4.webp) no-repeat right bottom #fff; padding: 4rem; }
+.title{ background: url(../img/pancakes-title.webp) no-repeat center; width: 200px; height: 200px; text-align: center; padding: 35px 50px; position: absolute; right: -105px; top: -43px; box-shadow: 0 0 25px #69503a73;}
+.title p:nth-child(1){ font: 700 18px var(--aleg); color: #a47d5e; }
+.title p:nth-child(2){ font: 92px var(--aleg); color: #dfc691; line-height: 1; }
+.title p:nth-child(3){ font: 700 18px var(--aleg); color: #979285;}
+.pancakes h2{ font: 700 48px var(--aleg); color: #56534c; }
+.pancakes small{ font: 700 14px var(--aleg); color: #a47d5e; text-transform: uppercase; }
+.pancakes .text{ font: 14px/24px var(--proxima); margin: 70px 0 30px; }
+
+
+.wrap-4{ background: url(../img/bg-5.webp) no-repeat center/cover;  padding: 88px 0 70px; text-align: center;}
+.menu{ background: url(../img/menu-bg.webp) no-repeat center/cover; height: 100%; width: 470px; }
+.breakfast{ color: #fff;  }
+.breakfast h2{ }
+.bfast-item{ margin: 2rem 0;}
+.bfast-item .price{ font: 36px var(--aleg); color: #dfc691;}
+
+
+
+.wrap-5{ background: url(../img/bg-6.webp) no-repeat center top #f3f1e9; padding: 100px 0 70px; text-align: center;}
+
 
 
 
